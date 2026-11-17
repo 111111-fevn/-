@@ -1,0 +1,3 @@
+[submodule "self-rag"]
+	path = self-rag
+	url = https://github.com/AkariAsai/self-rag.git

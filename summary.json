@@ -1,0 +1,31 @@
+{
+  "total": 10,
+  "exact_match": {
+    "before_correct": 5,
+    "after_correct": 3,
+    "before_pct": 50.0,
+    "after_pct": 30.0,
+    "delta_pp": -20.0,
+    "wrong_to_right": 0,
+    "right_to_wrong": 2
+  },
+  "answer_inclusion": {
+    "before_correct": 9,
+    "after_correct": 8,
+    "before_pct": 90.0,
+    "after_pct": 80.0,
+    "delta_pp": -10.0,
+    "wrong_to_right": 0,
+    "right_to_wrong": 1
+  },
+  "settings": {
+    "base_model": "selfrag/selfrag_llama2_7b",
+    "adapter": "/root/autodl-tmp/selfrag-lab/outputs/selfrag-10k",
+    "test_file": "/root/autodl-tmp/selfrag-lab/examples/accuracy_test.jsonl",
+    "max_new_tokens": 128,
+    "seed": 42,
+    "quantization": "4-bit NF4, double quant, BF16 compute",
+    "retrieval": "fixed provided evidence; no automatic retrieval",
+    "normalization": "casefold, punctuation to spaces, collapse whitespace; keep articles"
+  }
+}
